@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         btnMultiplicacao = findViewById(R.id.btnMultiplicacao);
     }
     public void btnAdicao(View v){
+
         numero1 + numero2;
     }
     public void btnSubtracao(View v){
