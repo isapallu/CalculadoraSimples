@@ -4,12 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     EditText numero1, numero2;
-    TextView btnAdicao, btnSubtracao, btnDivisao, btnMultiplicacao;
+    Button btnAdicao, btnSubtracao, btnDivisao, btnMultiplicacao;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,8 +17,21 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         numero1 = findViewById(R.id.numero1);
         numero2 = findViewById(R.id.numero2);
+        btnAdicao = findViewById(R.id.btnAdicao);
+        btnSubtracao = findViewById(R.id.btnSubtracao);
+        btnDivisao = findViewById(R.id.btnDivisao);
+        btnMultiplicacao = findViewById(R.id.btnMultiplicacao);
     }
     public void btnAdicao(View v){
         numero1 + numero2;
+    }
+    public void btnSubtracao(View v){
+        numero1 - numero2;
+    }
+    public void btnDivisao(View v){
+        numero1 / numero2;
+    }
+    public void btnMultiplicacao(View v){
+        numero1 * numero2;
     }
 }
