@@ -33,12 +33,24 @@ public class MainActivity extends AppCompatActivity {
         resultado.setText(resultadoSoma);
     }
     public void btnSubtracao(View v){
-        numero1 - numero2;
+        int intNumero1 = Integer.parseInt(numero1.getText().toString());
+        int intNumero2 = Integer.parseInt(numero2.getText().toString());
+        int subtracao = intNumero1 - intNumero2;
+        String resultadoSubtracao = String.valueOf(subtracao);
+        resultado.setText(resultadoSubtracao);
     }
     public void btnDivisao(View v){
-        numero1 / numero2;
+        int intNumero1 = Integer.parseInt(numero1.getText().toString());
+        int intNumero2 = Integer.parseInt(numero2.getText().toString());
+        int divisao = intNumero1 / intNumero2;
+        String resultadoDivisao = String.valueOf(divisao);
+        resultado.setText(resultadoDivisao);
     }
     public void btnMultiplicacao(View v){
-        numero1 * numero2;
+        int intNumero1 = Integer.parseInt(numero1.getText().toString());
+        int intNumero2 = Integer.parseInt(numero2.getText().toString());
+        int multiplicacao = intNumero1 * intNumero2;
+        String resultadoMultiplicacao = String.valueOf(multiplicacao);
+        resultado.setText(resultadoMultiplicacao);
     }
 }
