@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    TextView resultado;
     EditText numero1, numero2;
     Button btnAdicao, btnSubtracao, btnDivisao, btnMultiplicacao;
     @Override
@@ -17,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         numero1 = findViewById(R.id.numero1);
         numero2 = findViewById(R.id.numero2);
+        resultado = findViewById(R.id.resultado);
         btnAdicao = findViewById(R.id.btnAdicao);
         btnSubtracao = findViewById(R.id.btnSubtracao);
         btnDivisao = findViewById(R.id.btnDivisao);
