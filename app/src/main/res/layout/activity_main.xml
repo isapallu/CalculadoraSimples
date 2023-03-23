@@ -97,6 +97,7 @@
         android:background="#E67D7D"
         android:ems="10"
         android:inputType="number"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.819"
@@ -105,7 +106,7 @@
         app:layout_constraintVertical_bias="0.19" />
 
     <EditText
-        android:id="@+id/numero"
+        android:id="@+id/numero1"
         android:layout_width="139dp"
         android:layout_height="43dp"
         android:background="#E67D7D"
